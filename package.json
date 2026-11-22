@@ -1,0 +1,37 @@
+{
+  "name": "code-mode",
+  "version": "0.1.0",
+  "description": "Universal programmatic Code Mode execution engine for AI coding agents",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "code-mode": "bin/code-mode.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./shell": "./src/shell.js",
+    "./fs": "./src/fs.js",
+    "./runner": "./src/runner.js",
+    "./mcp": "./src/mcp.js",
+    "./adapters": "./src/adapters.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node bin/code-mode.js mcp"
+  },
+  "keywords": [
+    "code-mode",
+    "claude-code",
+    "ai-agent",
+    "mcp",
+    "tools",
+    "automation",
+    "llm",
+    "agentic"
+  ],
+  "author": "Open Source Community",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
